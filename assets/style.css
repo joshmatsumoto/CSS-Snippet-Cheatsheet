@@ -1,0 +1,22 @@
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	box-sizing: border-box;
+	flex-grow: 1;
+	border: 1px solid black;
+	width: 25%;
+}
+
+@media screen and (max-width: 991px) {
+	section {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 768px) {
+	section {
+		width: 100%;
+	}
+}
