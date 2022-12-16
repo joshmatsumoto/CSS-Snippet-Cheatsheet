@@ -1,3 +1,18 @@
+body{
+    background-color: #353535;
+    color: #d32be2;
+}
+header{
+    text-align: center;
+    margin:25px 25% 25px 25%;
+}
+header h1{
+    font-size: 300%;
+}
+header p{
+    color: white;
+    margin: 15px 0 0 0
+}
 main {
 	display: flex;
 	flex-wrap: wrap;
@@ -6,10 +21,21 @@ main {
 section {
 	box-sizing: border-box;
 	flex-grow: 1;
-	border: 1px solid black;
+	border: 1px dashed black;
 	width: 25%;
 }
+section h2{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+section code{
+    color: white;
+}
 
+footer{
+    text-align:center;
+    margin: 25px 0 50px 0;
+}
 @media screen and (max-width: 991px) {
 	section {
 		width: 50%;
