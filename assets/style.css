@@ -32,13 +32,12 @@ main {
 }
 .code-card section {
 	border: 2px dashed white;
-	border-radius: 10px;
 	padding: 10px;
 	margin: 10px 0px;
 	position: relative;
 }
 .code-card section h2 {
-	position: absolute;
+	position: relative;
 	top: -25px;
 	width: calc(100% - 40px);
 	border: 2px solid white;
@@ -48,6 +47,8 @@ main {
 	border-radius: 10px;
 }
 .code-card section div {
+    position:relative;
+    top: -25px;
 	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
@@ -63,6 +64,7 @@ main {
 	background-image: linear-gradient(var(--dark-code-bg), var(--light-code-bg));
 	padding: 20px 10px;
 	border-radius: 10px;
+    user-select: all;
 }
 
 footer {
