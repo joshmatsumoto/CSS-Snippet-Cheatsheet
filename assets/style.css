@@ -1,40 +1,73 @@
-body{
-    background-color: #353535;
-    color: #d32be2;
+:root {
+	--color-bg: #353535;
+	--dark-code-bg: #772e8a;
+	--light-code-bg: #d32be2;
 }
-header{
-    text-align: center;
-    margin:25px 25% 25px 25%;
+body {
+	background-color: var(--color-bg);
+	color: #d32be2;
 }
-header h1{
-    font-size: 300%;
+header {
+	text-align: center;
+	margin: 25px 25% 25px 25%;
 }
-header p{
-    color: white;
-    margin: 15px 0 0 0
+header h1 {
+	font-size: 300%;
+}
+header p {
+	color: white;
+	margin: 15px 0 0 0;
 }
 main {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-section {
+.code-card {
 	box-sizing: border-box;
 	flex-grow: 1;
-	border: 1px dashed black;
-	width: 25%;
+	width: 33%;
+	max-width: 33%;
+	padding: 10px;
 }
-section h2{
-    border: 1px solid black;
-    border-radius: 10px;
+.code-card section {
+	border: 2px dashed white;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px 0px;
+	position: relative;
 }
-section code{
-    color: white;
+.code-card section h2 {
+	position: absolute;
+	top: -25px;
+	width: calc(100% - 40px);
+	border: 2px solid white;
+	background-color: var(--color-bg);
+	font-size: 200%;
+	padding: 5px;
+	border-radius: 10px;
+}
+.code-card section div {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	height: max-content;
+}
+.code-card section div p {
+	margin: 5px 0px;
+	flex: 0;
+}
+.code-card section div code {
+	flex: 1;
+	color: white;
+	background-image: linear-gradient(var(--dark-code-bg), var(--light-code-bg));
+	padding: 20px 10px;
+	border-radius: 10px;
 }
 
-footer{
-    text-align:center;
-    margin: 25px 0 50px 0;
+footer {
+	text-align: center;
+	margin: 25px 0 50px 0;
 }
 @media screen and (max-width: 991px) {
 	section {
