@@ -51,6 +51,8 @@ main {
 	border-radius: 10px;
 }
 .code-card section div {
+	position: relative;
+	top: -25px;
 	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
